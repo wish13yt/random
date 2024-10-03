@@ -4,6 +4,7 @@
 </head>
 <body>
     <button onclick="randomGen()">harhjwewehgwhjhj</button>
+    <button onclick="clearNum()">clear</button>
     <div id="div1">
 
     </div>
@@ -26,6 +27,13 @@
                 console.log("checknum:" + checkNumValue)
                 alert("You lost!");
             }
+        }
+    </script>
+    <script>
+                function clearNum() {
+                    let div = document.getElementById("div1");
+                    div.replaceChildren();
+                    console.log("cleared")
         }
     </script>
 </body>
