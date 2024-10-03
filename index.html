@@ -4,16 +4,25 @@
 </head>
 <body>
     <button onclick="randomGen()">harhjwewehgwhjhj</button>
+    <div id="div1">
+
+    </div>
     <script>
         function randomGen() {
             const minCeiled = Math.ceil(1);
             const maxFloored = Math.floor(10);
             num = Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
-            if (num === 5) {
-                console.log(num)
+            checkNumValue = Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+            if (num === checkNumValue) {
+                console.log("number:" + num)
+                div1.innerHTML += num;
+                console.log("checknum:" + checkNumValue)
             } else {
                 console.log("no no")
-                console.log(num)
+                console.log("number:" + num)
+                div1.innerHTML += num;
+                alert("You lost!");
+                console.log("checknum:" + checkNumValue)
             }
         }
     </script>
