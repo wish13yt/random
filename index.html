@@ -15,14 +15,16 @@
             checkNumValue = Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
             if (num === checkNumValue) {
                 console.log("number:" + num)
+                console.log("yuo won!!!!")
                 div1.innerHTML += num;
                 console.log("checknum:" + checkNumValue)
+                alert("YOU WON!!!!!")
             } else {
-                console.log("no no")
+                console.log("yuo lost!111!!")
                 console.log("number:" + num)
                 div1.innerHTML += num;
-                alert("You lost!");
                 console.log("checknum:" + checkNumValue)
+                alert("You lost!");
             }
         }
     </script>
