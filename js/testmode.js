@@ -11,6 +11,8 @@ function testMode() {
         startConfetti();
         alert("YOU WON!!!!")
         document.getElementById("confettiButton").disabled = false;
+        localStorage.setItem("num", num);
+localStorage.setItem("checknum", checkNumValue);
     } else {
         console.log("yuo lost!111!!")
         console.log("number:" + num)
@@ -19,5 +21,7 @@ function testMode() {
         alert("You lost!");
         stopConfetti();
         document.getElementById("confettiButton").disabled = true;
+        localStorage.setItem("num", num);
+localStorage.setItem("checknum", checknum);
     }
 }
