@@ -14,8 +14,11 @@
 </style>
 </head>
 <body>
+    <script src="confetti.js"></script>
+    <h1>random</h1>
     <button onclick="randomGen()">do the thing!!</button>
     <button onclick="clearNum()">clear</button>
+    <button onclick="stopConfetti()">stop confetti</button>
     <div id="div1">
 
     </div>
@@ -30,7 +33,8 @@
                 console.log("yuo won!!!!")
                 div1.innerHTML += num;
                 console.log("checknum:" + checkNumValue)
-                alert("YOU WON!!!!!")
+                startConfetti();
+                alert("YOU WON!!!!")
             } else {
                 console.log("yuo lost!111!!")
                 console.log("number:" + num)
