@@ -18,7 +18,7 @@
     <h1>random</h1>
     <button onclick="randomGen()">do the thing!!</button>
     <button onclick="clearNum()">clear</button>
-    <button onclick="stopConfetti()">stop confetti</button>
+    <button onclick="stopConfetti()" id="confettiButton" disabled>stop confetti</button>
     <div id="div1">
 
     </div>
@@ -35,6 +35,7 @@
                 console.log("checknum:" + checkNumValue)
                 startConfetti();
                 alert("YOU WON!!!!")
+                document.getElementById("confettiButton").disabled = false;
             } else {
                 console.log("yuo lost!111!!")
                 console.log("number:" + num)
