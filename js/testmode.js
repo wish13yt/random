@@ -23,5 +23,7 @@ function testMode() {
         document.getElementById("confettiButton").disabled = true;
         localStorage.setItem("num", num);
 localStorage.setItem("checknum", checknum);
+document.cookie = "num=" + num;
+document.cookie = "checknum=" + num;
     }
 }
