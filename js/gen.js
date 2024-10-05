@@ -17,5 +17,7 @@ function randomGen() {
         div1.innerHTML += num;
         console.log("checknum:" + checkNumValue)
         alert("You lost!");
+        stopConfetti();
+        document.getElementById("confettiButton").disabled = true;
     }
 }
