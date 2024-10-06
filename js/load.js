@@ -1,4 +1,7 @@
 function loadData() {
+if (num === "null") {
+console.log("null")
+} else {
     var br = document.createElement("br");
     const num = localStorage.getItem("num");
     const checknum = localStorage.getItem("checknum");
@@ -8,4 +11,5 @@ function loadData() {
     score.appendChild(br);
     scorec.innerHTML += cookie
     scorec.appendChild(br);
+}
 }
