@@ -6,7 +6,7 @@ function randomGen() {
     if (num === checknum) {
         console.log("number:" + num)
         console.log("yuo won!!!!")
-        div1.innerHTML += num;
+        div1.innerHTML += " " + num;
         console.log("checknum:" + checknum)
         startConfetti();
         alert("YOU WON!!!!")
@@ -16,7 +16,7 @@ localStorage.setItem("checknum", checknum);
     } else {
         console.log("yuo lost!111!!")
         console.log("number:" + num)
-        div1.innerHTML += num;
+        div1.innerHTML += " " + num;
         console.log("checknum:" + checknum)
         alert("You lost!");
         stopConfetti();
